@@ -7,7 +7,6 @@
 }
 
 body {
-    /* background-color: black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +19,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    /* border: solid red 1px; */
     width: 100vw;
     font-family: Inter;
 }
@@ -31,6 +29,11 @@ body {
     color: #000;
     font-size: 20px;
     font-weight: 600;
+
+    @media (max-width: 700px) {
+        gap: 18px;
+        font-size: 10px;
+    }
 }
 
 .Links_div {
@@ -42,8 +45,6 @@ body {
     @media (max-width: 700px) {
         gap: 18px;
         font-size: 15px;
-        background-color: red;
-        /* font-family: Inter; */
     }
 }
 
@@ -54,6 +55,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 20px;
+
+    @media (max-width: 700px) {
+        gap: 18px;
+        font-size: 15px;
+    }
 }
 
 .Links>input {
@@ -64,6 +70,13 @@ body {
     margin-right: 20px;
     font-size: large;
     background-color: #2ABDA3;
+
+    @media (max-width: 700px) {
+        gap: 18px;
+        font-size: small;
+        height: 32px;
+        width: 60px;
+    }
 }
 
 .Sml_intro {
@@ -97,23 +110,34 @@ body {
     font-weight: 900;
     font-size: 4rem;
     color: #000;
+
+    @media (max-width: 700px) {
+        font-size: 3rem;
+        font-weight:700;
+    }
 }
 
 .Sml_intro_h2_2 {
-    background: -webkit-linear-gradient(180deg , #EF05D8, #00A0FA);
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 30px;
     font-size: 4rem;
     font-family: Inter;
     font-weight: 900;
+
+    @media (max-width: 700px) {
+        font-size: 3rem;
+        font-weight:700;
+    }
 }
 
 .Sml_intro_p_2 {
     color: #000;
     font-size: 11px;
 }
-.Sml_intro_p1_1{
+
+.Sml_intro_p1_1 {
     color: #000;
     font-size: 11px;
     font-weight: 800;
