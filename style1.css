@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+
 }
 
 body {
@@ -13,40 +14,91 @@ body {
 }
 
 .Links {
+    /*nav bar*/
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 80px;
-    border:solid  red 1px;
+    justify-content: space-between;
+    gap: 20px;
+    /* border: solid red 1px; */
     width: 100vw;
-@media (max-width: 767px) {
-    gap:20px;
 }
-}
-.Links > p {
+
+.Links:nth-child(n+2) {
+    /*Selecting the nav bar middle elements*/
     font-family: Inter;
     color: white;
-    margin: 23px 0 23px 0;
     font-size: 20px;
     font-weight: 600;
-@media (max-width: 700px){
-    font-size: 10px;
-    background-color: red;
+    /* @media (max-width: 700px) {
+        font-size: 15px;
+        background-color: red;
+        font-family: Inter;
+    } */
 }
+
+.Links_div {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 20px 0;
+    gap: 20px;
+
+    @media (max-width: 700px) {
+        gap: 18px;
+        font-size: 15px;
+        background-color: red;
+        /* font-family: Inter; */
+    }
+}
+
+.Links>p {
+    margin-left: 20px;
+}
+
+.Links>input {
+    height: 30px;
+    width: min(20vw, 100px);
+    border: none;
+    margin-right: 20px;
 }
 
 .Sml_intro {
     font-family: Inter;
-    height: min(30vh , 298px);
-    width: min(50vw , 576px);
-    background-color: aqua;
+    margin-top: 56px;
+    height:auto;
+    width: min(50vw, 576px);
+    /* background-color: aqua; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-@media (max-width: 700px){
-    gap: 25px;
-    overflow: hidden;
+    /* gap: 40px; */
+
+    @media (max-width: 700px) {
+        font-family: Inter;
+        /* gap: 25px; */
+        height: min(30vh, 298px);
+        width: min(60vw, 576px);
+    }
 }
+
+.Sml_intro_p1_1,
+.Sml_intro_h2_1,
+.Sml_intro_h2_2,
+.Sml_intro_p1_2 {
+    margin-bottom: 30px;
+}
+.Sml_intro_h2_1 {
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 4rem;
+    color: red;
+}
+
+.Sml_intro_h2_2 {
+ color: yellow;
+ font-size: 3rem;
+}
+
+.Sml_intro_p1_2 {
+    /* color: green; */
 }
