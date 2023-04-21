@@ -109,6 +109,12 @@ body {
     font-weight: 900;
 }
 
-.Sml_intro_p1_2 {
-    /* color: green; */
+.Sml_intro_p_2 {
+    color: #000;
+    font-size: 11px;
+}
+.Sml_intro_p1_1{
+    color: #000;
+    font-size: 11px;
+    font-weight: 800;
 }
