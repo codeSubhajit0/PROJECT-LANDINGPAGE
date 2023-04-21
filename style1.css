@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,19 +22,15 @@ body {
     gap: 20px;
     /* border: solid red 1px; */
     width: 100vw;
+    font-family: Inter;
 }
 
-.Links:nth-child(n+2) {
+.Links_div>p {
     /*Selecting the nav bar middle elements*/
     font-family: Inter;
-    color: white;
+    color: #000;
     font-size: 20px;
     font-weight: 600;
-    /* @media (max-width: 700px) {
-        font-size: 15px;
-        background-color: red;
-        font-family: Inter;
-    } */
 }
 
 .Links_div {
@@ -52,20 +48,28 @@ body {
 }
 
 .Links>p {
+    font-size: 30px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-left: 20px;
 }
 
 .Links>input {
-    height: 30px;
-    width: min(20vw, 100px);
+    height: 46px;
+    width: min(20vw, 113px);
     border: none;
+    border-radius: .5rem;
     margin-right: 20px;
+    font-size: large;
+    background-color: #2ABDA3;
 }
 
 .Sml_intro {
     font-family: Inter;
     margin-top: 56px;
-    height:auto;
+    height: auto;
     width: min(50vw, 576px);
     /* background-color: aqua; */
     text-align: center;
@@ -87,16 +91,22 @@ body {
 .Sml_intro_p1_2 {
     margin-bottom: 30px;
 }
+
 .Sml_intro_h2_1 {
     font-family: Inter;
     font-weight: 900;
     font-size: 4rem;
-    color: red;
+    color: #000;
 }
 
 .Sml_intro_h2_2 {
- color: yellow;
- font-size: 3rem;
+    background: -webkit-linear-gradient(180deg , #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+    font-size: 4rem;
+    font-family: Inter;
+    font-weight: 900;
 }
 
 .Sml_intro_p1_2 {
