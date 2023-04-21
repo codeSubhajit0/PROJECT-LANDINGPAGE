@@ -20,13 +20,20 @@ body {
     gap: 80px;
     border:solid  red 1px;
     width: 100vw;
+@media (max-width: 767px) {
+    gap:20px;
+}
 }
 .Links > p {
-    font-family: Int;
+    font-family: Inter;
     color: white;
     margin: 23px 0 23px 0;
     font-size: 20px;
     font-weight: 600;
+@media (max-width: 700px){
+    font-size: 10px;
+    background-color: red;
+}
 }
 
 .Sml_intro {
@@ -38,4 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+@media (max-width: 700px){
+    gap: 25px;
+    overflow: hidden;
+}
 }
