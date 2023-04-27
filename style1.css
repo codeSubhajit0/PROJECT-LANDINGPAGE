@@ -5,12 +5,19 @@
     color: black;
     font-family: sans-serif;
 }
-
+/* 
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+} */
+main{
+min-height: 100vh;
+min-width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .Links {
@@ -63,8 +70,9 @@ body {
 
 .Sml_intro {
 
-    margin: 56px 0 80px 0;
-    width: min(50vw, 576px);
+    margin: 56px 0 40px 0;
+    min-height: 60vh;
+    width: 60vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -98,13 +106,13 @@ body {
 
 .Sml_intro_p_2 {
     color: #000;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 800;
 }
 
 .Sml_intro_p1_1 {
     color: #000;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 800;
 }
 
@@ -117,9 +125,29 @@ body {
     margin: 118px 0 0 0 ;
     background-color: #EF05D8;
     max-width: fit-content;
+    text-align: center;
 }
 
-@media (max-width: 700px) {
+.reviews_tab > * {
+    margin: 10px;
+}
+
+.reviews_tab-review {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reviews_tab-review > div {
+    width: 40vw;
+    background-color: #2ABDA3;
+}
+
+.reviews_tab-review > div > ol {
+    list-style: none;
+}
+
+@media (max-width:560px) {
     .Links_div>p {
 
         color: #000;
@@ -162,8 +190,9 @@ body {
         text-align: center;
         display: flex;
         flex-direction: column;
-        height: min(30vh, 298px);
-        width: min(60vw, 576px);
+        min-height: 80vh;
+        /* height: min(30vh, 298px); */
+        /* width: min(60vw, 576px); */
     }
 
     .Sml_intro_h2_1 {
@@ -182,33 +211,13 @@ body {
         border-radius: 1rem;
         margin-top: 40px;
     }
-}
-
-@media (max-width: 500px) {
-    .Image1 {
-        height: auto;
-        width: 70vw;
-        border-radius: 1rem;
-        margin-top: 2rem;
+    .Sml_intro_p_2 {
+        font-size: 14px;
+        font-weight: 800;
     }
-}
-
-@media (max-width: 500px) {
-    .Sml_intro {
-        margin-top: 100px;
-        text-align: center;
-        /* display: flex;
-        flex-direction: column; */
-        height: min(30vh, 298px);
-        width: min(60vw, 576px);
-        /* overflow-y: scroll; */
-    }
-}
-@media (max-width: 400px) {
-    .Image1 {
-        height: auto;
-        width: 70vw;
-        border-radius: 1rem;
-        margin-top: 16rem;
+    
+    .Sml_intro_p1_1 {
+        font-size: 14px;
+        font-weight: 800;
     }
 }
