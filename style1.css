@@ -148,6 +148,9 @@ align-items: center;
 }
 
 @media (max-width:560px) {
+    main{
+     overflow-x: hidden;
+    }
     .Links_div>p {
 
         color: #000;
@@ -190,9 +193,8 @@ align-items: center;
         text-align: center;
         display: flex;
         flex-direction: column;
-        min-height: 80vh;
-        /* height: min(30vh, 298px); */
-        /* width: min(60vw, 576px); */
+        min-height: 20vh;
+        width: min(60vw, 576px);
     }
 
     .Sml_intro_h2_1 {
