@@ -123,9 +123,11 @@ align-items: center;
 
 .reviews_tab {
     margin: 118px 0 0 0 ;
-    background-color: #EF05D8;
-    max-width: fit-content;
+    /* background-color: greenyellow; */
+    max-width: 90%;
     text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 
 .reviews_tab > * {
@@ -134,18 +136,42 @@ align-items: center;
 
 .reviews_tab-review {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    /* justify-content: flex-start; */
+    margin-top: 3rem;
 }
 
-.reviews_tab-review > div {
-    width: 40vw;
-    background-color: #2ABDA3;
+
+.reviews_tab-review > div > section {
+    /* background-color: #EF05D8; */
+    height:50%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.reviews_tab-review > div > ol {
-    list-style: none;
+
+/* .reviews_tab-review > section{
+    background-color: #00A0FA;
+} */
+
+.review_1 , .review_2 , .review_3 , .review_4{
+    width: 50%;
+    display: flex;
+    /* border: 1px solid red; */
+    
 }
+
+.review_1 > img , .review_2 > img , .review_3 > img , .review_4 > img{
+   max-height: 2rem;
+    margin: 7px 10px 0 10px;
+}
+
+.review_1 > p , .review_2 > p , .review_3 > p , .review_4 > p{
+    text-align: start;
+    margin: 10px 10px 10px 0;
+
+}
+
 
 @media (max-width:560px) {
     main{
