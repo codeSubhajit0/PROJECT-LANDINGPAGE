@@ -134,6 +134,10 @@ align-items: center;
     margin: 10px;
 }
 
+.reviews_tab-review_div1 , .reviews_tab-review_div2 {
+    width: 50%;
+}
+
 .reviews_tab-review {
     display: flex;
     /* justify-content: flex-start; */
@@ -149,10 +153,6 @@ align-items: center;
     font-weight: 400;
 }
 
-
-/* .reviews_tab-review > section{
-    background-color: #00A0FA;
-} */
 
 .review_1 , .review_2 , .review_3 , .review_4{
     width: 50%;
@@ -170,6 +170,16 @@ align-items: center;
     text-align: start;
     margin: 10px 10px 10px 0;
 
+}
+
+.review_1 > span , .review_2 > span , .review_3 > span , .review_4 > span{
+    text-align: left;
+}
+
+.reviews{
+    text-align: left;
+    font-size:20px;
+    font-weight: 600;
 }
 
 
