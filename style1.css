@@ -85,7 +85,6 @@ align-items: center;
 
 .Sml_intro_p1_1,
 .Sml_intro_h2_1,
-.Sml_intro_h2_2,
 .Sml_intro_p1_2 {
     margin-bottom: 30px;
 }
@@ -95,6 +94,10 @@ align-items: center;
     font-size: 4rem;
     color: #000;
 
+}
+
+#sml_intro_h2_2{
+margin-top:1.5rem;
 }
 
 .Sml_intro_h2_2 {
