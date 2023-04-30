@@ -62,17 +62,21 @@ align-items: center;
     width: min(20vw, 113px);
     border: none;
     border-radius: .5rem;
-    /* margin-right: 20px; */
     font-size: large;
+    font-weight: 600;
     background-color: #2ABDA3;
 
+}
+
+.Links>input:focus{
+    color: white;
 }
 
 .Sml_intro {
 
     margin: 56px 0 40px 0;
     min-height: 60vh;
-    width: 60vh;
+    width: 60vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -130,8 +134,28 @@ align-items: center;
     font-size: 1.5rem;
 }
 
-.reviews_tab > * {
-    margin: 10px;
+.text_first {
+    color:#2ABDA3;
+    font-size: clamp(.2rem , 3vw , 1.5rem);
+    font-weight: 400;
+}
+
+.text_before_gradient {
+    font-size: clamp(1rem , 5vw , 2.5rem);
+    font-weight: 600;
+}
+
+.text_gradient {
+    background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(1rem , 5vw , 2.5rem);
+    font-weight: 600;
+}
+
+.text_after_gradient{
+    font-size: clamp(.2rem , 3vw , 1.5rem);
+    font-weight:400 ;
 }
 
 .reviews_tab-review_div1 , .reviews_tab-review_div2 {
@@ -140,7 +164,6 @@ align-items: center;
 
 .reviews_tab-review {
     display: flex;
-    /* justify-content: flex-start; */
     margin-top: 3rem;
 }
 
@@ -162,7 +185,8 @@ align-items: center;
 }
 
 .review_1 > img , .review_2 > img , .review_3 > img , .review_4 > img{
-   max-height: 2rem;
+    /* max-height: 2rem; */
+    height: clamp(1rem , 5vw , 2rem);
     margin: 7px 10px 0 10px;
 }
 
@@ -178,10 +202,18 @@ align-items: center;
 
 .reviews{
     text-align: left;
-    font-size:20px;
+    font-size:clamp(1rem , 2vw , 1.5rem);
     font-weight: 600;
+    margin-top: 13px;
 }
 
+.span_i {
+    margin-bottom: 10px;
+}
+
+.span_i :nth-child(2){
+    font-size: clamp(.5rem , 2vw , 1rem);
+}
 
 @media (max-width:560px) {
     main{
@@ -190,10 +222,10 @@ align-items: center;
     .Links_div>p {
 
         color: #000;
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 600;
         gap: 18px;
-        font-size: 10px;
+        /* font-size: 10px; */
     }
 
     .Links_div {
@@ -220,8 +252,9 @@ align-items: center;
         background-color: #2ABDA3;
         gap: 18px;
         font-size: small;
+        font-weight: 600;
         height: 32px;
-        width: 60px;
+        /* width: auto; */
     }
 
     .Sml_intro {
@@ -257,5 +290,12 @@ align-items: center;
     .Sml_intro_p1_1 {
         font-size: 14px;
         font-weight: 800;
+    }
+
+}
+
+@media (min-width:900px) {
+    .reviews_tab-review_div1{
+        width: 60%;
     }
 }
