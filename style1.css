@@ -78,8 +78,8 @@ align-items: center;
 
 
 .Sml_intro_p1_1,
-.Sml_intro_h2_1,
 .Sml_intro_h2_2,
+.Sml_intro_h2_1_2,
 .Sml_intro_p1_2 {
     margin-bottom: clamp(2rem , 5vw , 3rem);
 }
@@ -94,6 +94,10 @@ align-items: center;
 
 .Sml_intro_h2_1_2 {
     font-size: clamp(2.5rem , 5vw , 3rem);
+}
+
+#sml_intro_h2_2{
+margin-top:1.5rem;
 }
 
 .Sml_intro_h2_2 {
