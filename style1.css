@@ -264,7 +264,7 @@ margin-top:1.5rem;
 
     /*Hamburger menue*/
     .hamburger_menue {
-        margin: 0;
+        margin-top: 10px;
         padding: 0;
         z-index: 1;
         height: 30px;
@@ -283,8 +283,8 @@ margin-top:1.5rem;
     .line2,
     .line3 {
         background-color:#2ABDA3;
-        height: 3px;
-        width: 20px;
+        height: 4px;
+        width: 28px;
         border-radius: 1rem;
         transition: transform 1s,visibility ease-in-out 400ms;
     }
@@ -301,15 +301,32 @@ margin-top:1.5rem;
         visibility: hidden;
     }
     
+    .menue {
+        height: 0;
+        width: 0;
+        position: absolute;
+        z-index: 1;
+        border-radius: 1rem;
+        background:rgba(255, 255, 255, .56);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        -webkit-backdrop-filter: blur(5px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        transition: height ease-out 1s, width ease-out 1s;
+    }
+
     .menue_vis {
         z-index: 1;
         position:absolute;
         height:100vh;
-        width: 95%;
+        width: 90%;
+        margin-top: 10px;
         border-radius: 1rem;
-        opacity: .5;
-        background-color: #2ABDA3;
-        backdrop-filter: blur;
+        background:rgba(255, 255, 255, .56);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        -webkit-backdrop-filter: blur(5px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     }
 
     .Sml_intro {
