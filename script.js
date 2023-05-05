@@ -11,4 +11,5 @@ menue.addEventListener('click', function () {
     document.querySelector('.line3').classList.toggle('line3h');
     document.querySelector('.line2').classList.toggle('line2h');
     document.querySelector('.menue').classList.toggle('menue_vis');
+    document.querySelector('.menue').classList.toggle('menue_dis');
 })

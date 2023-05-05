@@ -227,6 +227,7 @@ margin-top:1.5rem;
     main{
      overflow-x: hidden;
     }
+
     .Links_div>p {
 
         color: #000;
@@ -249,6 +250,8 @@ margin-top:1.5rem;
         font-weight: 800;
         gap: 18px;
         margin-top: 20px;
+        position: absolute;
+        z-index: -1;
     }
 
     .Links>input {
@@ -263,10 +266,22 @@ margin-top:1.5rem;
     }
 
     /*Hamburger menue*/
-    .hamburger_menue {
-        margin-top: 10px;
-        padding: 0;
+
+    .menue_container {
+        top: 10px;
+        height: 30px;
+        width: 100%;
         z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .hamburger_menue {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 2;
         height: 30px;
         width: 30px;
         display: flex;
@@ -275,10 +290,7 @@ margin-top:1.5rem;
         justify-content: space-evenly;
         
     }
-    .pos {
-        /* position: absolute; */
-    }
-    
+
     .line1,
     .line2,
     .line3 {
@@ -301,10 +313,14 @@ margin-top:1.5rem;
         visibility: hidden;
     }
     
+
+
     .menue {
+        top: -10px;
         height: 0;
         width: 0;
-        position: absolute;
+        margin-top: 10px;
+        position: relative;
         z-index: 1;
         border-radius: 1rem;
         background:rgba(255, 255, 255, .56);
@@ -313,13 +329,57 @@ margin-top:1.5rem;
         -webkit-backdrop-filter: blur(5px);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         transition: height ease-out 1s, width ease-out 1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    .menue > a , .menue > input {
+        display: none;
+        transition: display ease-out 8s , height ease-out 8s , width ease-out 8s ;
+    }
+
+    .menue_dis > a , .menue_dis > input {
+        display: inline;
+    }
+
+    .menue_dis > input {
+        border: none;
+        border-radius: .5rem;
+        background-color: #2ABDA3;
+        font-size: 15px;
+        font-weight: 600;
+        height: 40px;
+        width: 80%;
+    }
+    .menue_dis > input:focus {
+        color: #fff;
+    }
+
+    .menue_dis > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: none;
+        border-radius: .5rem;
+        background-color: #2ABDA3;
+        font-size: 15px;
+        font-weight: 600;
+        height: 40px;
+        width: 80%;
+    }
+    .menue_dis > a:focus {
+        color: #fff;
     }
 
     .menue_vis {
         z-index: 1;
-        position:absolute;
+        position:relative;
         height:100vh;
-        width: 90%;
+        width: 100%;
         margin-top: 10px;
         border-radius: 1rem;
         background:rgba(255, 255, 255, .56);
