@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: black;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -24,24 +25,22 @@ main {
     justify-content: space-between;
     gap: 20px;
     width: 90vw;
-
+    animation: dropDown 0.3s ease;
 }
 
-.Links_div>p {
+.Links_div>a {
     /*Selecting the nav bar middle elements*/
-
     color: #000;
-    font-size: 20px;
-    font-weight: 600;
-
+    font-weight: bold;
+    font-size: clamp(1rem , 1.1vw , 11.5rem);
+    text-decoration: none;
 }
 
 .Links_div {
     display: flex;
     flex-direction: row;
     margin: 20px 0 20px 0;
-    gap: 20px;
-
+    gap: 100px;
 }
 
 .Links>p {
@@ -50,7 +49,7 @@ main {
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .Links>input {
@@ -67,11 +66,7 @@ main {
     color: white;
 }
 
-.hamburger_menue {
-    display: none;
-}
-
-.menue {
+.menue_container{
     display: none;
 }
 
@@ -83,6 +78,7 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
+    animation: dropDown 0.4s ease;
 }
 
 
@@ -94,15 +90,16 @@ main {
 }
 
 .Sml_intro_h2_1 {
-    font-weight: 900;
-    font-size: 4rem;
+    font-weight: bold;
     color: #000;
-    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-size: clamp(2rem, 5vw, 6rem);
     margin-bottom: clamp(10px, 5vw, 15px);
 }
 
 .Sml_intro_h2_1_2 {
-    font-size: clamp(2.5rem, 5vw, 3rem);
+
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 6rem);
 }
 
 #sml_intro_h2_2 {
@@ -113,21 +110,22 @@ main {
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(2.5rem, 5vw, 3rem);
-    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: bold;
 
 }
 
 .Sml_intro_p1_1 {
-    color: #000;
-    font-size: clamp(.3rem, 3vw, 1.2rem);
-    font-weight: 500;
+    color: gray;
+    font-weight: bold;
+    font-size: clamp(.6rem, 1vw, 2rem);
 }
 
 .Sml_intro_p_2 {
-    color: #000;
-    font-size: clamp(.3rem, 3vw, 1.2rem);
-    font-weight: 500;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 100px;
+    font-size: clamp(.6rem, 1vw, 2rem);
 }
 
 .Image1 {
@@ -140,8 +138,9 @@ main {
     margin: 118px 0 0 0;
     max-width: 90%;
     text-align: center;
-    font-weight: 800;
+    font-weight: bold;
     font-size: 1.5rem;
+    animation: dropDown 0.5s ease;
 }
 
 .reviews_tab>p {
@@ -150,26 +149,34 @@ main {
 
 .text_first {
     color: #2ABDA3;
-    font-size: clamp(.2rem, 3vw, 1.5rem);
-    font-weight: 400;
+    font-size: clamp(1.2rem, 2vw, 2.1rem);
+    font-weight: bold;
 }
 
 .text_before_gradient {
-    font-size: clamp(1rem, 5vw, 2.5rem);
-    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: bold;
 }
 
 .text_gradient {
     background: -webkit-linear-gradient(180deg, #EF05D8, #00A0FA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(1rem, 5vw, 2.5rem);
-    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: bold;
 }
 
 .text_after_gradient {
-    font-size: clamp(.2rem, 3vw, 1.5rem);
-    font-weight: 400;
+    color: gray;
+    font-weight: bold;
+    font-size: clamp(.6rem, 1vw, 3rem);
+}
+
+.text_after_gradient1,.text_after_gradient2 {
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: clamp(.6rem, 1vw, 3rem);
 }
 
 .reviews_tab-review_div1,
@@ -204,7 +211,7 @@ main {
 .review_3>img,
 .review_4>img {
     height: clamp(1rem, 5vw, 2rem);
-    margin: 7px 10px 0 10px;
+    margin: 10px 10px 0 10px;
 }
 
 .review_1>p,
@@ -235,7 +242,11 @@ main {
 }
 
 .span_i :nth-child(2) {
-    font-size: clamp(.5rem, 2vw, 1rem);
+    color: gray;
+    font-size: clamp(.6rem, 1vw, 3rem);
+}
+.reviews {
+    margin-bottom: 10px;
 }
 
 @media (max-width:560px) {
@@ -319,8 +330,10 @@ main {
         height: 4px;
         width: 28px;
         border-radius: 1rem;
-        transition: transform 1s, visibility ease-in-out 400ms;
+        transition: transform .4s, visibility ease .2s;
+        animation: dropDown 0.4s ease;
     }
+
 
 
     .line1h {
@@ -339,49 +352,49 @@ main {
 
 
     .menue {
-        top: -10px;
+        z-index: 1;
+        top: 30px;
         height: 0;
-        width: 0;
+        min-width: 100vw;
         margin-top: 10px;
         position: relative;
-        z-index: 1;
         border-radius: 1rem;
-        background: rgba(255, 255, 255, .56);
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        -webkit-backdrop-filter: blur(5px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-        transition: height ease-out 1s, width ease-out 1s;
+        background: #fff;
+        transition: height ease-in .3s;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 8rem;
+        justify-content: flex-start;
     }
 
     .menue>a,
     .menue>input {
         display: none;
-        transition: display ease-out 8s, height ease-out 8s, width ease-out 8s;
+
+        transition: height ease .8s, margin-top ease .8s , display ease .8s;
     }
 
     .menue_dis>a,
     .menue_dis>input {
-        display: inline;
+        display: block;
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: bold;
     }
 
     .menue_dis>input {
         border: none;
         border-radius: .5rem;
-        background-color: #2ABDA3;
-        font-size: 15px;
-        font-weight: 600;
+        color: #fff;
+        background-color: #2ABDA3;;
+        font-size: 20px;
+        font-weight: 900;
         height: 40px;
-        width: 80%;
+        width: 40%;
     }
 
-    .menue_dis>input:focus {
-        color: #fff;
+    .menue_dis>input:hover {
+        color: #000;
     }
 
     .menue_dis>a {
@@ -391,29 +404,27 @@ main {
         text-decoration: none;
         border: none;
         border-radius: .5rem;
-        background-color: #2ABDA3;
-        font-size: 15px;
-        font-weight: 600;
+        color: #00A0FA;
+        font-size: 20px;
+        font-weight: 900;
         height: 40px;
         width: 80%;
     }
 
-    .menue_dis>a:focus {
-        color: #fff;
+    .menue_dis>a:hover {
+        color: #EF05D8;
     }
 
     .menue_vis {
         z-index: 1;
+        top: 30px;
+        left: 22px;
         position: relative;
-        height: 100vh;
-        width: 100%;
+        height: 80vh;
+        min-width: 100vw;
         margin-top: 10px;
         border-radius: 1rem;
-        background: rgba(255, 255, 255, .56);
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        -webkit-backdrop-filter: blur(5px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        background: #fff;
     }
 
     .Sml_intro {
@@ -422,7 +433,7 @@ main {
         display: flex;
         flex-direction: column;
         min-height: 20vh;
-        width: 100%;
+        width: 85%;
     }
 
     .Sml_intro_h2_1 {
@@ -465,5 +476,17 @@ main {
 @media (min-width:900px) {
     .reviews_tab-review_div1 {
         width: 60%;
+    }
+}
+
+@keyframes dropDown {
+    0% {
+        opacity:0;
+        transform: translateY(-120px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px
+        );
     }
 }
