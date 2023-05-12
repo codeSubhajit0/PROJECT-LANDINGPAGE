@@ -1,9 +1,12 @@
 'use strict'
+
+const menue = document.querySelector('.hamburger_menue');
+const btn = document.querySelector(".slide_show_btn");
+
 let Input = document.querySelector('input');
 Input.addEventListener('click', function () {
     window.open("https://codesubhajit0.github.io/Create-Account-/Login.html", '_self');
 })
-const menue = document.querySelector('.hamburger_menue');
 
 menue.addEventListener('click', function () {
     document.querySelector('.hamburger_menue').classList.toggle('pos')
@@ -14,4 +17,25 @@ menue.addEventListener('click', function () {
     document.querySelector('.menue').classList.toggle('menue_dis');
 })
 
+let slideCount = 1;
+btn.addEventListener('click', (e) => {
+    console.log(document.querySelector(`.slide_show_section_${1}`));
+    console.log(slideCount);
+    
+    
+    if(slideCount <5) {
+            // if(document.querySelectorAll('.1').classList.contains(1))
+            document.querySelector(`.slide_show_section_${slideCount}`).style.display = 'none';
+            document.querySelector(`.slide_show_section_${slideCount + 1}`).style.display = 'none';
+            document.querySelector(`.slide_show_section_${slideCount}`).classList.add('animate');
+            slideCount+=1;
+        }
+        else {
+            slideCount -= 1;
+            document.querySelector(`.slide_show_section_${slideCount}`).style.display = 'none';
+            document.querySelector(`.slide_show_section_${slideCount + 1}`).style.display = 'none';
+            document.querySelector(`.slide_show_section_${slideCount}`).classList.add('animate');
+            slideCount+=1;
+        }
+})
                                                                                                                                                                                               

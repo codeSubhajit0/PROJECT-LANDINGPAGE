@@ -311,8 +311,8 @@ main {
 }
 .slide_show {
     min-width: 50%;
-    background-color: #86D5E7;
-    border: 1px solid black;
+    background-color: transparent;
+    /* border: 1px solid black; */
     display: flex;
     /* overflow-x: scroll; */
     position: relative;
@@ -320,30 +320,48 @@ main {
 /* .slide_show :nth-child(1) {
     width: 100%;
 } */
+.slide_show_btn {
+    z-index: 1;
+    background-color: #000;
+    position: absolute;
+    bottom: 20%;
+    height: 8%;
+    width: 12%;
+    border: none;
+    color: #fff;
+    font-size: clamp(1rem , 5vw , 2rem);
+    line-height: 0%;
+    border-radius: 0 1rem 1rem 0;
+}
 .slide_show_section {
      height: 100%;
      width: 100%;
-     position: relative;
+     position: absolute;
      border: 1px solid red;
-     z-index: -1;
+     /* z-index: -1; */
      
 }
-.slide_show :nth-child(1) {
+.slide_show_section_1 {
     background-color: red;
-    transform: translateX(-100%);
+    width: 100%;
+    display: block;
 }
-.slide_show :nth-child(2) {
-    background-color: blue;
-    transform: translateX(0px);
+.slide_show_section_2 {
+    background-color: green;
+    display: none;
 }
-.slide_show :nth-child(3) {
+.slide_show_section_3 {
     background-color: greenyellow;
-    transform: translateX(200px);
+    display: none;
 }
-.slide_show :nth-child(4) {
+.slide_show_section_4 {
     background-color: cyan;
-    transform: translateX(400px);
+    display: none;
 }
+.animate {
+    animation: slide 0.4s ease ;
+}
+
 @media (max-width:560px) {
 
     main {
@@ -576,15 +594,28 @@ main {
     .sibling_slide_show_anchor {
         height: 30px;
         line-height: 30px;
-        width: 7rem;
+        width: 6rem;
         left: -1.5rem;
     }
-    
+    .slide_show_btn{
+        min-width:15%;
+    }
 }
 
 @media (min-width:900px) {
     .reviews_tab-review_div1 {
         width: 60%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity:0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0%);
     }
 }
 
