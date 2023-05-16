@@ -526,12 +526,10 @@ main {
 .some_text_after_slide {
     height: 400px;
     width: 100%;
-    /* background-color: rgb(0,204,102); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 50px;
 }
 .some_anchor_after_slide {
     text-decoration: none;
@@ -542,20 +540,19 @@ main {
     padding-block: 1rem;
     padding-inline: 2.5rem;
     border-radius: 2.5rem;
-    margin-bottom: 2rem;
 }
 .text_after_slide {
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     text-align: center;
 }
 .some_small_text_after_slide {
     color: gray;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: clamp(.6rem, 2vw, 3rem);
 }
 .some_bold_text_after_slide {
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     font-size:clamp(1rem, 3vw, 4rem);
 }
@@ -680,7 +677,7 @@ main {
         position: relative;
         border-radius: 1rem;
         background: #fff;
-        transition: height ease-in .3s;
+        transition: height ease-in 250ms;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -690,16 +687,18 @@ main {
     .menue>a,
     .menue>input {
         display: none;
-
-        transition: height ease .8s, margin-top ease .8s, display ease .8s;
+        /* font-size: 0px; */
+        /* height: 0px; */
+        transition: display ease 250ms ;
     }
 
     .menue_dis>a,
     .menue_dis>input {
         display: block;
+        height: 40px;
         margin-top: 40px;
-        font-size: 25px;
-        font-weight: bold;
+        /* font-size: 25px;
+        font-weight: bold; */
     }
 
     .menue_dis>input {
@@ -707,7 +706,6 @@ main {
         border-radius: .5rem;
         color: #fff;
         background-color: #2ABDA3;
-        ;
         font-size: 20px;
         font-weight: 900;
         height: 40px;
@@ -748,6 +746,15 @@ main {
         background: #fff;
     }
 
+    .menue_text {
+        font-size: 25px;
+        font-weight: bold;
+        visibility: hidden;
+        transition:  visibility ease 800ms;
+    }
+    .menue_text_vis {
+        visibility: visible;
+    }
     .Sml_intro {
         margin-top: 56px;
         text-align: center;
@@ -815,7 +822,14 @@ main {
         background-size: 90% 100%;
         width: 18%;
     }
+    .slide_show_btn2 {
+        background-size: 90% 100%;
+        width: 18%;
+    }
 
+    .some_text_after_slide {
+        height: 250px;
+    }
     .some_anchor_after_slide {
         margin-bottom: 0;
     }

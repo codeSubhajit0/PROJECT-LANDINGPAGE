@@ -21,6 +21,9 @@ menue.addEventListener('click', function () {
     document.querySelector('.line2').classList.toggle('line2h');
     document.querySelector('.menue').classList.toggle('menue_vis');
     document.querySelector('.menue').classList.toggle('menue_dis');
+    document.querySelectorAll('.menue_text').forEach((item) => {
+        item.classList.toggle('menue_text_vis');
+    });
 })
 
 
