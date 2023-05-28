@@ -662,19 +662,18 @@ main {
     position: relative;
     border-radius: 1rem;
     background: #fff;
-    /* transition: height ease-in 250ms; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    clip-path: circle(0.5% at 99% 1%);
+    transition: all linear 250ms;
   }
 
   .menue > a,
   .menue > input {
-    display: none;
-    /* font-size: 0px; */
-    /* height: 0px; */
-    transition: display ease 250ms;
+    opacity: 0;
+    transition: opacity linear 250ms;
   }
 
   .menue_dis > a,
@@ -682,8 +681,7 @@ main {
     display: block;
     height: 40px;
     margin-top: 40px;
-    /* font-size: 25px;
-        font-weight: bold; */
+    opacity: 1;
   }
 
   .menue_dis > input {
@@ -725,10 +723,11 @@ main {
     left: 22px;
     position: relative;
     height: 80vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     margin-top: 10px;
     border-radius: 1rem;
     background: #fff;
+    clip-path: circle(135.5% at 91% 0);
   }
 
   .menue_text {
