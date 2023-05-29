@@ -622,23 +622,23 @@ main {
     overflow-x: hidden;
   }
 
-  .Links {
+  /* .Links {
     margin-top: 20px;
-  }
+  } */
 
-  .Links_div > p {
+  /* .Links_div > p {
     color: #000;
     font-size: 12px;
     font-weight: 600;
     gap: 18px;
-  }
+  } */
 
   .Links_div {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     margin: 20px 0 20px 0;
     gap: 18px;
-    font-size: 15px;
+    font-size: 15px; */
     display: none;
   }
 
@@ -884,6 +884,9 @@ main {
   .canvas {
     top: -50px;
     margin-top: 4rem;
+  }
+  .wave {
+    height: 100px;
   }
   .navigation_links {
     height: 300px;
