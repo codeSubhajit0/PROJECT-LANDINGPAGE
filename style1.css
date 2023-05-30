@@ -617,28 +617,41 @@ main {
   background-color: #00a0fa;
 }
 
+.links_navigation {
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.navigation_appname {
+  color: #ffffff;
+  font-size: clamp(1rem , 5vw , 1.5rem);
+  font-weight: bold;
+  margin-left: 10%;
+  /* text-align: start; */
+}
+
+.navigation_someText {
+  color: #ffffff;
+  font-size: clamp(.6rem , 2vw , 1rem);
+  font-weight: bold;
+  margin-left: 10%;
+  /* text-align: start; */
+}
+
 @media (max-width: 560px) {
   main {
     overflow-x: hidden;
   }
-
-  /* .Links {
-    margin-top: 20px;
-  } */
-
-  /* .Links_div > p {
-    color: #000;
-    font-size: 12px;
-    font-weight: 600;
-    gap: 18px;
-  } */
-
   .Links_div {
-    /* display: flex;
-    flex-direction: row;
-    margin: 20px 0 20px 0;
-    gap: 18px;
-    font-size: 15px; */
     display: none;
   }
 
@@ -886,7 +899,7 @@ main {
     margin-top: 4rem;
   }
   .wave {
-    height: 50px;
+    height: 120px;
   }
   .navigation_links {
     height: 200px;
