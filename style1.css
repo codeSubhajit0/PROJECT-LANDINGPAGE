@@ -12,6 +12,24 @@
   width: 0;
 }
 
+/*Loder*/
+.loder_l {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background-color: white;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+}
+
+.main_dis {
+  visibility: hidden;
+}
+
 main {
   min-height: 100vh;
   min-width: 100vw;
@@ -19,6 +37,121 @@ main {
   position: relative;
   flex-direction: column;
   align-items: center;
+  visibility: hidden;
+}
+
+.main_vis {
+  visibility: visible;
+}
+
+.logo {
+  height: clamp(15rem, 20dvh, 20rem);
+  width: clamp(15rem, 20dvw, 20rem);
+  margin-bottom: 2rem;
+  position: relative;
+}
+.bubble {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 120;
+}
+.--1 {
+  background-color: rgb(5, 255, 209, 0.6);
+  border-radius: 27% 73% 36% 64% / 83% 58% 42% 17%;
+  animation: lodingIcon1 7s linear infinite;
+}
+
+.--2 {
+  background-color: rgb(239 5 216 / 0.5);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: lodingIcon2 6s linear infinite;
+}
+.--3 {
+  border-radius: 76% 24% 55% 45% / 17% 43% 57% 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bolder;
+  background-color: rgba(240, 245, 255, 0.8);
+  animation: lodingIcon3 5s linear infinite;
+}
+.parent {
+  outline: 1px solid black;
+  height: clamp(1rem, 2dvh, 4rem);
+  width: 60%;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.loder_load {
+  height: clamp(0.2rem, 1.8dvh, 15px);
+  margin: 8px;
+  background-color: black;
+  border-radius: 2rem;
+  animation: LoderAnim 6s ease-in;
+}
+
+@keyframes LoderAnim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes lodingIcon1 {
+  0% {
+    border-radius: 35% 65% 64% 36% / 54% 47% 53% 46%;
+  }
+  50% {
+    border-radius: 39% 61% 66% 34% / 50% 47% 53% 50%;
+  }
+  75% {
+    border-radius: 76% 24% 55% 45% / 17% 43% 57% 83%;
+  }
+  100% {
+    border-radius: 35% 65% 64% 36% / 54% 47% 53% 46%;
+  }
+}
+
+@keyframes lodingIcon2 {
+  0% {
+    border-radius: 21% 79% 51% 49% / 21% 30% 70% 79%;
+  }
+  50% {
+    border-radius: 39% 61% 66% 34% / 31% 69% 31% 69%;
+  }
+  75% {
+    border-radius: 39% 61% 66% 34% / 31% 69% 31% 69%;
+  }
+  100% {
+    border-radius: 21% 79% 51% 49% / 21% 30% 70% 79%;
+  }
+}
+
+@keyframes lodingIcon3 {
+  0% {
+    border-radius: 39% 61% 66% 34% / 31% 69% 31% 69%;
+  }
+  50% {
+    border-radius: 21% 79% 51% 49% / 21% 30% 70% 79%;
+  }
+  75% {
+    border-radius: 55% 45% 36% 64% / 57% 56% 44% 43%;
+  }
+  100% {
+    border-radius: 39% 61% 66% 34% / 31% 69% 31% 69%;
+  }
+}
+
+.loder_dis {
+  display: none;
 }
 
 /*Links section*/
@@ -618,22 +751,18 @@ main {
 }
 
 .links_navigation {
-  /* background-color: #fff; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
-  width: 40%;
+  width: 100%;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 2rem;
 }
 
 .navigation_appname {
   color: #ffffff;
-  font-size: clamp(1rem , 5vw , 1.5rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: bold;
   margin-left: 10%;
   /* text-align: start; */
@@ -641,7 +770,7 @@ main {
 
 .navigation_someText {
   color: #ffffff;
-  font-size: clamp(.6rem , 2vw , 1rem);
+  font-size: clamp(0.6rem, 2vw, 1rem);
   font-weight: bold;
   margin-left: 10%;
   /* text-align: start; */
