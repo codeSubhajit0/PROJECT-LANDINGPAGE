@@ -90,7 +90,7 @@ main {
 
 .loder_load {
   height: clamp(0.2rem, 1.8dvh, 15px);
-  margin: 8px;
+  margin: 6px 4.5px 6px 4.5px;
   background-color: black;
   border-radius: 2rem;
   animation: LoderAnim 6s ease-in;
@@ -753,27 +753,25 @@ main {
 .links_navigation {
   height: 100%;
   width: 100%;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ gap: 2rem;
 }
 
-.navigation_appname {
+/* .navigation_appname {
   color: #ffffff;
   font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: bold;
   margin-left: 10%;
-  /* text-align: start; */
-}
+} */
 
 .navigation_someText {
   color: #ffffff;
   font-size: clamp(0.6rem, 2vw, 1rem);
   font-weight: bold;
   margin-left: 10%;
-  /* text-align: start; */
 }
 
 @media (max-width: 560px) {
