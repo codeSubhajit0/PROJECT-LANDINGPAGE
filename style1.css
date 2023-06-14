@@ -18,7 +18,7 @@
   width: 100vw;
   z-index: 1000;
   background-color: white;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ main {
   margin: 6px 4.5px 6px 4.5px;
   background-color: black;
   border-radius: 2rem;
-  animation: LoderAnim 6s ease-in;
+  animation: LoderAnim 3s ease-in;
 }
 
 @keyframes LoderAnim {
@@ -747,32 +747,76 @@ main {
 }
 .navigation_links {
   height: 100%;
-  background-color: #00a0fa;
+  /* background-color: #00a0fa; */
 }
 
 .links_navigation {
   height: 100%;
   width: 100%;
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- align-items: center;
- gap: 2rem;
 }
 
-/* .navigation_appname {
-  color: #ffffff;
+.section_links {
+  z-index: 123;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-color: #00a0fa;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
   font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: bold;
-  margin-left: 10%;
-} */
+  text-transform: uppercase;
+}
+
+.navigation_appname {
+  color: #ffffff;
+  margin-top: 5%;
+  font-size: clamp(1.5rem , 5vw , 2.2rem);
+}
 
 .navigation_someText {
   color: #ffffff;
-  font-size: clamp(0.6rem, 2vw, 1rem);
-  font-weight: bold;
-  margin-left: 10%;
 }
+.navigation_someText1 {
+  color: #fff;
+  text-align: center;
+}
+
+.names_section1 {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+.names_section2 {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  gap: 1rem;
+}
+
+.names_section  p {
+ color: #fff;
+}
+.names_section1 p,
+.names_section2 p {
+  color: #fff;
+}
+.names {
+  padding: 1rem;
+  background-color: #86d5e7;
+  border-radius: 1rem;
+  transition: all ease-out 250ms;
+}
+.names:hover {
+  transform: translateY(-20px) scale(1.1);
+}
+
 
 @media (max-width: 560px) {
   main {
@@ -1030,6 +1074,20 @@ main {
   }
   .navigation_links {
     height: 200px;
+  }
+
+  /*Footer section*/
+  .navigation_someText {
+    font-size: .8rem;
+  }
+  .navigation_someText1 {
+    font-size: .8rem;
+  }
+
+  /*Names of our team*/
+  .names {
+    text-align: center;
+    font-size: .8rem;
   }
 }
 
