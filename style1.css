@@ -770,18 +770,25 @@ main {
   text-transform: uppercase;
 }
 
-.navigation_appname {
+.logo_1 {
+  height: 150px;
+  border-radius: 50px;
+}
+
+/* .navigation_appname {
   color: #ffffff;
   margin-top: 5%;
   font-size: clamp(1.5rem , 5vw , 2.2rem);
-}
+} */
 
 .navigation_someText {
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 .navigation_someText1 {
   color: #fff;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .names_section1 {
@@ -808,16 +815,16 @@ main {
   color: #fff;
 }
 .names {
+  text-align: center;
   padding: 1rem;
   background-color: #86d5e7;
   border-radius: 1rem;
   transition: all ease-out 250ms;
 }
 .names:hover {
-  transform: translateY(-20px) scale(1.1);
+  background-color: #ef05d8;
+  cursor: pointer;
 }
-
-
 @media (max-width: 560px) {
   main {
     overflow-x: hidden;
@@ -1090,11 +1097,20 @@ main {
     margin-right: 1.5rem;
   }
 
+.navigation_someText , .navigation_someText1 {
+  margin-top: -20px;
+}
+
   /*Names of our team*/
   .names {
-    padding: .4rem;
+    padding-inline: .8rem;
     text-align: center;
     font-size: .6rem;
+  }
+
+  /*Logo Footer*/
+  .logo_1 {
+    height: 100px;
   }
 }
 
