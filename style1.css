@@ -457,7 +457,7 @@ main {
 .slide_show_btn1 {
   display: none;
   z-index: 1;
-  background: url(right-icon.png);
+  background: url(Pictures/right-icon.png);
   background-repeat: no-repeat;
   background-size: 80% 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -473,7 +473,7 @@ main {
 .slide_show_btn2 {
   display: none;
   z-index: 1;
-  background: url(left-icon.png);
+  background: url(Pictures/left-icon.png);
   background-repeat: no-repeat;
   background-size: 80% 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1078,7 +1078,8 @@ main {
 
   /*Footer section*/
   .navigation_someText {
-    font-size: .8rem;
+    font-size: .8remnames
+    ;
   }
   .navigation_someText1 {
     font-size: .8rem;
