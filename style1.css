@@ -764,7 +764,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items:center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: bold;
   text-transform: uppercase;
@@ -966,8 +966,7 @@ main {
     top: 30px;
     left: 22px;
     position: relative;
-    height: 80vh;
-    /* min-width: 100vw; */
+    height: 100dvh;
     margin-top: 10px;
     border-radius: 1rem;
     background: #fff;
@@ -1078,17 +1077,24 @@ main {
 
   /*Footer section*/
   .navigation_someText {
-    font-size: .8remnames
-    ;
+    font-size: .8rem;
   }
   .navigation_someText1 {
     font-size: .8rem;
   }
 
+  .names_section1 :nth-child(1){
+    margin-left: 1.5rem;
+  }
+  .names_section1 :nth-child(4) {
+    margin-right: 1.5rem;
+  }
+
   /*Names of our team*/
   .names {
+    padding: .4rem;
     text-align: center;
-    font-size: .8rem;
+    font-size: .6rem;
   }
 }
 
