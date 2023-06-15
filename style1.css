@@ -745,10 +745,10 @@ main {
   background: url(wave/pink.png);
   animation: animate_wave4 linear 18s infinite;
 }
-.navigation_links {
+/* .navigation_links {
   height: 100%;
-  /* background-color: #00a0fa; */
-}
+  background-color: #00a0fa;
+} */
 
 .links_navigation {
   height: 100%;
@@ -758,7 +758,7 @@ main {
 .section_links {
   z-index: 123;
   position: absolute;
-  height: 500px;
+  height: 15%;
   width: 100%;
   background-color: #00a0fa;
   display: flex;
@@ -1098,16 +1098,23 @@ main {
   }
 
 .navigation_someText , .navigation_someText1 {
-  margin-top: -20px;
+  margin-top: -60px;
 }
-
+.navigation_someText1 {
+  margin-bottom: -40px;
+}
   /*Names of our team*/
   .names {
     padding-inline: .8rem;
     text-align: center;
-    font-size: .6rem;
+    font-size: .4rem;
+    margin-bottom: -40px;
   }
-
+  .names_section1,.names_section2 {
+    gap: .5rem;
+    margin: -15px;
+  }
+  
   /*Logo Footer*/
   .logo_1 {
     height: 100px;
