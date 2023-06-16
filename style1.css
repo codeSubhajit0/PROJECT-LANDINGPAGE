@@ -188,6 +188,7 @@ main {
 .Links_div > a {
   color: #000;
   height: 46px;
+  border-radius: 0.5rem;
   font-weight: bold;
   font-size: clamp(1rem, 1.1vw, 11.5rem);
   text-decoration: none;
@@ -196,16 +197,21 @@ main {
   justify-content: center;
   margin-inline: .1rem;
   padding:clamp(1rem, 1.1vw, 11.5rem);
+  transition: color 280ms , border 280ms;
 } 
+.Links_div>a:hover {
+  color: #2ABDA3;
+  border: 1px solid #2ABDA3;
+}
 .links-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: min(10vw , 100px);
+  margin-left: 100px;
+  margin-right: 50px;
   transform: translateX(3vw);
 }
 .links-section > a {
-  color: #000;
   height: 46px;
   font-weight: bold;
   font-size: clamp(1rem, 1.1vw, 11.5rem);
@@ -227,6 +233,12 @@ main {
   text-transform: uppercase;
   background-color:#2ABDA3;
   margin-right: 2rem;
+  transition: color 250ms , outline 250ms ,outline-offset 250ms;
+}
+.signup:hover {
+  color: #000;
+  outline-offset: 3px;
+  outline: 4px solid #2ABDA3;
 }
 .Login{
   height: 46px;
@@ -238,10 +250,13 @@ main {
   color: #fff;
   text-transform: uppercase;
   background-color: #fda085;
+  transition: color 250ms , outline 250ms ,outline-offset 250ms;
 }
-/* .Links > input:focus {
-  color: white;
-} */
+.Login:hover {
+  color: #000;
+  outline-offset: 3px;
+  outline: 4px solid #fda085;
+}
 
 .menue_container {
   display: none;
@@ -1164,7 +1179,7 @@ main {
     font-size: 1.5rem;
   }
   .Links_div {
-    margin-left: 4vw;
+    margin-left: 14vw;
     gap: 4px; 
   }
   .Links_div > a {
@@ -1177,6 +1192,9 @@ main {
     font-size: .7rem;
     font-weight: bold;
     padding: .2rem;
+  }
+  .signup {
+    margin-right: 20px;
   }
 }
 
