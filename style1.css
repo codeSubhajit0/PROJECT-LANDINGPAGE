@@ -912,7 +912,7 @@ main {
   .hamburger_menue {
     padding: 0;
     position: absolute;
-    /* margin-right: 2rem; */
+    margin-right: 2rem;
     z-index: 2;
     height: 30px;
     width: 30px;
@@ -1156,9 +1156,27 @@ main {
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .reviews_tab-review_div1 {
     width: 60%;
+  }
+  .Links > p {
+    font-size: 1.5rem;
+  }
+  .Links_div {
+    margin-left: 4vw;
+    gap: 4px; 
+  }
+  .Links_div > a {
+    font-size: .8rem;
+  }
+  .links-section {
+    margin-left: 1vw;
+  }
+  .links-section > a {
+    font-size: .7rem;
+    font-weight: bold;
+    padding: .2rem;
   }
 }
 
