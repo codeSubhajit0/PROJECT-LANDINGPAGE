@@ -201,7 +201,7 @@ main {
 } 
 .Links_div>a:hover {
   color: #2ABDA3;
-  border: 1px solid #2ABDA3;
+  border: 2px solid #2ABDA3;
 }
 .links-section {
   display: flex;
@@ -237,7 +237,7 @@ main {
 }
 .signup:hover {
   color: #000;
-  outline-offset: 3px;
+  outline-offset: 2px;
   outline: 4px solid #2ABDA3;
 }
 .Login{
@@ -254,7 +254,7 @@ main {
 }
 .Login:hover {
   color: #000;
-  outline-offset: 3px;
+  outline-offset: 2px;
   outline: 4px solid #fda085;
 }
 
@@ -277,7 +277,7 @@ main {
 .Sml_intro_h2_2,
 .Sml_intro_h2_1_2,
 .Sml_intro_p1_2 {
-  margin-bottom: clamp(2rem, 5vw, 3rem);
+  margin-bottom: clamp(.5rem, 5vw, 1.5rem);
 }
 
 .Sml_intro_h2_1 {
@@ -997,13 +997,18 @@ main {
     border: none;
     border-radius: 0.5rem;
     color: #fff;
-    background-color: #2abda3;
     font-size: 20px;
     font-weight: 900;
     height: 40px;
     width: 40%;
+    text-transform: uppercase;
   }
-
+  .ham-sigin {
+    background-color: #2abda3;
+  }
+  .ham-login {
+    background-color: #fda085;
+  }
   .menue_dis > input:hover {
     color: #000;
   }
