@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 const slideWidth = document
   .querySelector(".slide_show")
