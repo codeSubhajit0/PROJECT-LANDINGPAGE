@@ -197,11 +197,11 @@ main {
   justify-content: center;
   margin-inline: .1rem;
   padding:clamp(1rem, 1.1vw, 11.5rem);
-  transition: color 280ms , border 280ms;
+  transition: color 60ms , outline 60ms;
 } 
 .Links_div>a:hover {
   color: #2ABDA3;
-  border: 2px solid #2ABDA3;
+  outline: 2px solid #2ABDA3;
 }
 .links-section {
   display: flex;
