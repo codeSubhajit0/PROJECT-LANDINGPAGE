@@ -77,3 +77,12 @@ window.onload = function(){
         document.querySelector('main').classList.add('main_vis');
     }, 3000);
 }
+
+
+
+
+document.querySelector('.ham-login').addEventListener('click' , function (e) {
+  e.preventDefault;
+  window.open("login_signin/login.html" , "_self");
+})
+
