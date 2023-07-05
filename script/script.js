@@ -83,7 +83,7 @@ window.onload = function(){
 
 document.querySelector('.ham-login').addEventListener('click' , function (e) {
   e.preventDefault;
-  window.open("login_signin/signup.html" , "_self");
+  window.open("login_signin/login.html" , "_self");
 })
 
 document.querySelector('.ham-sigin').addEventListener('click', function(e) {
