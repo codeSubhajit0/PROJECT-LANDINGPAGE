@@ -140,6 +140,9 @@ main {
 /*Mobile view*/
 
 @media (max-width: 560px) {
+    main {
+        width: 100%;
+    }
     .form_name {
         transform:  translateX(-11.5vw) translateY(-330px);
     }
