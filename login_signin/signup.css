@@ -15,7 +15,10 @@ main {
     min-width: 100%;
     position: absolute;
 }
-
+/* .space {
+    min-height: 20px;
+    min-width: 100%;
+} */
 .logo p {
     margin-left: 2dvw;
     font-weight: bold;
@@ -51,7 +54,7 @@ main {
     justify-content: center;
 }
 
-.form_forlogin {
+.form_forSignup {
     min-height: fit-content;
     display: flex;
     flex-direction: column;
@@ -60,7 +63,7 @@ main {
     gap: 10dvh;
     text-transform: uppercase;
 }
-.form_forlogin section {
+.form_forSignup section {
     width: 50dvw;
     text-align: center;
 }
@@ -73,7 +76,7 @@ main {
     letter-spacing: 2px;
     color: #000;
 }
-.form_forlogin section input {
+.form_forSignup section input {
     border: none;
     border-radius: 6px;
     height: 40px;
@@ -84,7 +87,7 @@ main {
     transition: outline 100ms;
 }
 
-.form_forlogin section input:focus {
+.form_forSignup section input:focus {
     outline: 3px solid #2ABDA3;
 }
 
@@ -143,7 +146,7 @@ main {
     .form_name {
         transform:  translateX(-11.5vw) translateY(-330px);
     }
-    .form_forlogin {
+    .form_forSignup {
         gap: 8dvh;
         width: 100dvw;
     }
@@ -151,10 +154,10 @@ main {
         margin-left: 22.5dvw;
         margin-top: -4px;
     }
-    .form_forlogin section {
+    .form_forSignup section {
         width: 100%;
     }
-    .form_forlogin section input {
+    .form_forSignup section input {
         width: 60%;
     }
     .image_section {
