@@ -36,6 +36,7 @@ main > section {
     /* border:1px solid black; */
 }
 
+/*Contact section*/
 .list_contact{
     width: 300px;
     background-color: #fff;
@@ -114,13 +115,12 @@ main > section {
   overflow-x: hidden;
 }
 .container_contact::-webkit-scrollbar {
-  /* display: none; */
-  opacity: 1;
-  width: 10px;
-}
-.container_contact::-webkit-scrollbar:hover{
-  background: var(--color-chat-interface);
+  width: 3px;
   border-radius: 10px;
+}
+.container_contact::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color:rgba(0, 0, 0, 0.2);
 }
 .user_contacts {
   display: flex;
@@ -181,10 +181,12 @@ main > section {
   color: #fff;
 }
 
-
+/*Main Interface*/
 .mainInterface {
     width: calc(100% - 300px);
 }
+
+/*Current Contact*/
 .current_contact {
   height: 5rem;
   width:100%;
@@ -219,6 +221,7 @@ main > section {
   background-color: var(--color-dot);
 }
 
+/*Chat section*/
 .chat_interface {
   height: calc(100% - 10rem);
   width: 100%;
@@ -265,6 +268,7 @@ main > section {
   color: var(--color-white);
 }
 
+/*Chat Text Input Section*/
 .chat {
   height: 5rem;
   width: 100%;
