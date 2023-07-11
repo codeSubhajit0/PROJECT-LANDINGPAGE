@@ -320,6 +320,8 @@ main {
 .Image1 {
   width: 50vw;
   border-radius: 1rem;
+  border: 2px solid rgba(0, 0, 0, .4);
+  box-shadow: 10px 10px 10px -8px;
 }
 
 /*Star section*/

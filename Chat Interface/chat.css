@@ -9,6 +9,7 @@
   
     /* Colors */
     --color-white: #fff;
+    --color-send:#FF2171;
     --color-dot: #BEF963;
     --color-text:#339AF0;
     --color-chat-interface:#CBFFA9;
@@ -145,10 +146,12 @@ main > section {
 }
 .contact_text{
   margin: 10px;
+  width: 60%;
   /* border: 1px solid black; */
 }
 .contact_text_name {
   /* margin: 5px; */
+  text-align: start;
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--color-text);
@@ -161,11 +164,17 @@ main > section {
   /* border: 1px solid black; */
 }
 
-.contact_text_name,
+/* .contact_text_name,
 .contact_text_description {
-  margin-left: .2rem;
-}
+  margin-left: -20px;
+} */
 
+.contact_time_dot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .time {
   font-size: 10px;
   width: 50px;
@@ -179,6 +188,7 @@ main > section {
   border-radius: 50%;
   text-align: center;
   color: #fff;
+  margin-right: 35px;
 }
 
 /*Main Interface*/
@@ -237,7 +247,7 @@ main > section {
   scrollbar-width: none;
   background-color: var(--color-chat-interface);
 }
-.scrollbar-hidden::-webkit-scrollbar{
+.chat_container::-webkit-scrollbar{
   display: none;
 }
 
@@ -260,12 +270,13 @@ main > section {
   right: calc(-100% + 45%);
   height: max-content;
   width: 40%;
-  background-color:var(--color-dot);
+  background-color:var(--color-send);
   border-radius: .8rem;
   margin-top: 1rem;
   margin-bottom: .5rem;
   padding: 1rem;
   color: var(--color-white);
+  opacity: .6;
 }
 
 /*Chat Text Input Section*/
