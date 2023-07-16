@@ -500,6 +500,7 @@ main {
   text-align: center;
   position: relative;
   margin: 0 0 5% 0;
+  display: none;
 }
 
 /*Slide show*/

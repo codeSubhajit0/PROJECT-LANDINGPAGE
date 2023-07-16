@@ -36,8 +36,10 @@ contactsList(2);
 
 //Contact search
 contactSearch.addEventListener('input',function(){
-  let searchName = contactSearch.value;
-  // console.log(contact);
+  let searchName = contactSearch.value.split(' ');
+
+  // console.log(contact[1].innerText);
+  console.log(searchName);
 })
 
 
